@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: MrMNTG
+    plan: free
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: TOKEN
+        description: "Telegram Bot token from @BotFather"
+        sync: false
+      - key: API_HASH
+        description: "Telegram API hash from https://my.telegram.org"
+        sync: false
+      - key: API_ID
+        description: "Telegram API ID from https://my.telegram.org"
+        sync: false
+      - key: OWNER
+        description: "Owner's Telegram user ID "
+        sync: false

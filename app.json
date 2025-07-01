@@ -1,0 +1,33 @@
+{
+    "name": "Assistent",
+    "description": "Do Nothing",
+    "repository": "https://github.com/MN-BOTS/MN-TeraBox-Downloader-Bot",
+    "keywords": [
+      "telegram",
+      "bot"
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ],
+    "env": {
+      "TOKEN": {
+        "description": "Telegram Bot token from @BotFather",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Telegram API hash from https://my.telegram.org",
+        "required": true
+      },
+      "API_ID": {
+        "description": "Telegram API ID from https://my.telegram.org",
+        "required": true
+      },
+      "OWNER": {
+        "description": "Owner's Telegram user ID (from @userinfobot)",
+        "required": true
+      }
+    }
+  }
+  
